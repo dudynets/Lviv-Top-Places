@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Улюблені місця Львова</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            background: url('https://coworker.imgix.net/pictures/C282/edit/lviv-resize.jpg?auto=format,compress&fit=clamp');
+            background-size: cover;
+            backdrop-filter: brightness(50%);
+        }
+        .content {
+            background: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 64px;
+            border-radius: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 400;
+            color: black;
+        }
+        .cards {
+            margin-top: 48px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: row;
+        }
+        .cards__card {
+            background: white;
+            min-width: 240px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 15px;
+            box-shadow: rgba(110, 110, 110, 0.2) 0px 7px 29px 0px;
+            flex-grow: 1;
+            width: 0;
+            margin: 20px;
+            overflow: hidden;
+            transition: all ease-in-out .2s;
+        }
+        .cards__card:first-of-type {
+            margin-left: 0;
+        }
+        .cards__card:last-of-type {
+            margin-right: 0;
+        }
+        .cards__card:hover {
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 14px 58px 0px;
+            margin-top: -5px;
+        }
+        .cards__card-image {
+            width: 100%;
+            height: auto;
+            height: 180px;
+        }
+        .cards__card-title {
+            font-size: 20px;
+            font-weight: 300;
+            margin: 16px 16px 0 16px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        .cards__card-desc {
+            margin: 14px 16px 0 16px;
+            font-size: 16px;
+            font-weight: 300;
+            color: black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+        .cards__card-details {
+            margin: 16px 16px 20px 16px;
+            font-size: 16px;
+            font-weight: 300;
+            color: rgb(128, 128, 128);
+            font-style: italic;
+        }
+        .cards__card-details a {
+            color: rgb(128, 128, 128);
+            text-decoration: none;
+        }
+        .cards__card-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            Підбірка улюблених місць у Львові:
+        </div>
+        <div class="cards">
+            <div class="cards__card">
+                <img class="cards__card-image"
+                    src="https://i0.wp.com/photo-lviv.in.ua/wp-content/uploads/2015/02/222.jpg">
+                <div class="cards__card-title">
+                    Парк Івана Франка
+                </div>
+                <div class="cards__card-desc">
+                    Парк імені Івана Франка — найстаріший та один з центральних парків Львова, перед головним корпусом
+                    університету ім. Івана Франка.
+                </div>
+                <div class="cards__card-details">
+                    <a href='https://goo.gl/maps/UpnGTq2kuGiHDdi9A'>Показати на карті</a>
+                </div>
+            </div>
+            <div class="cards__card">
+                <img class="cards__card-image" src="https://f.discover.ua/location/709/3vk91.jpg">
+                <div class="cards__card-title">
+                    Площа Ринок
+                </div>
+                <div class="cards__card-desc">
+                    З цієї площі більш як сімсот років тому розпочалося будівництво Львова, і до ХХ століття саме вона
+                    вважалася центром міста.
+                </div>
+                <div class="cards__card-details">
+                    <a href='https://goo.gl/maps/PCbvb2yKpce7rQED9'>Показати на карті</a>
+                </div>
+            </div>
+            <div class="cards__card">
+                <img class="cards__card-image"
+                    src="https://eventukraine.com/ev/wp-content/uploads/2019/09/nico-benedickt-F9YupnzaCIg-unsplash.jpg">
+                <div class="cards__card-title">
+                    Високий замок
+                </div>
+                <div class="cards__card-desc">
+                    Високим замком називають гору, на ній розташований парк. На вершині й справді колись був замок.
+                    Проте від нього залишився лише невеликий фрагмент.
+                </div>
+                <div class="cards__card-details">
+                    <a href='https://goo.gl/maps/FkhChXJVgF7N8mfn9'>Показати на карті</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
